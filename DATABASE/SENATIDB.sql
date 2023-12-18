@@ -241,7 +241,7 @@ ALTER TABLE empleados auto_increment 1;
 CALL spu_empleado_registrar (1,'Martinez','Luisa','89945613','2016-3-23','933293445');
 
 -- ----------------------------------------
-CALL spu_empleado_registrar (2, 'Gomez', 'Carlos', '78896542', '2019-8-15', '933293445', 'carlos.gomez@email.com');
+CALL spu_empleado_registrar (2, 'Gomez', 'Carlos', '78896542', '2019-8-15', '933293445');
 CALL spu_empleado_registrar (3, 'Rodriguez', 'Maria', '65547892', '2020-5-10', '933293445');
 CALL spu_empleado_registrar (4, 'Perez', 'Juan', '77882233', '2017-11-02', '912345678');
 
@@ -280,5 +280,15 @@ BEGIN
         s.idsede, s.n_sede;
 END $$
 
+DELIMITER $$
+CREATE PROCEDURE spu_resumen_tpcombustible()
+BEGIN 
+	SELECT 
+	 `tipocombustible`,
+	 COUNT(`tipocombustible`) AS 'total'
+	FROM vehiculos 
+	GROUP BY `tipocombustible`
+	ORDER BY `total`;
+END$$
 
 CALL spu_grupos_sedes;
