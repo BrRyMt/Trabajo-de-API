@@ -25,7 +25,7 @@
                 <label class="form-label"> <strong> Numero de DNI: </strong> </label>
                 <input type="text" maxlength="8" id="nrodocumento" placeholder="Buscar numero de DNI">
                 <button type="button" class="btn btn-primary" name="buscar" id="buscar">Buscar</button>
-
+                <a href="./listar-empleados.php" class="btn btn-secondary">Cancelar</a>
                 <br><small id="status" class="text-primary"> No hay busquedas Activas</small>
             </div>
 

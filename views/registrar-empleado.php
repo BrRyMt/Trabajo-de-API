@@ -49,7 +49,7 @@
                 </div>
                 <div class="div mb-3 text-end">
                     <button type="submit" class="btn btn-primary   "> Registrar</button>
-                    <button type="button" class="btn btn-secondary "> Cancelar</button>
+                    <a href="./listar-empleados.php" class="btn btn-secondary">Cancelar</a>
                 </div>
             </div>
         </form>

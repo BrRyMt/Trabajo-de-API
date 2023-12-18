@@ -13,10 +13,17 @@
 
 <body>
     <main class="container pt-3">
+        <div class="alert alert-info mt-3 p-4">
+            <h5>Empleados - Lista General</h5>
+        </div>
 
         <form class="container border pt-3 rounded-3" id="formBusqueda" action="_POST" autocomplete="off">
-        <a href="busca-empleado.php" class="btn btn-primary">Buscar</a>
-            <a href="registrar-empleado.php" class="btn btn-primary">Registrar</a>
+            <div class="p-2">
+                <a href="busca-empleado.php" class="btn btn-primary">Buscar</a>
+                <a href="registrar-empleado.php" class="btn btn-primary">Registrar</a>
+                <a href="./grafica-estadistica-empleados.html" class="btn btn-primary">Grafico</a>
+            </div>
+
 
             <div style="max-height: 400px; overflow-y: auto;">
                 <table class="table table-striped table-bordered">
